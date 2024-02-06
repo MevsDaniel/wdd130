@@ -1,0 +1,42 @@
+body {
+    background-color: whitesmoke;    ;
+}
+a .nav_link {
+    padding: 30px;
+    font-size: 1.3em;
+    color: black;
+}
+#content{
+    max-width: 1600px;
+    text-align: center;
+    margin:0 auto;
+    
+}
+#background {
+    height: 725px;
+}
+    header {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        margin-right: 10px;
+
+    }
+    
+    nav ul{
+        display: flex;
+    }
