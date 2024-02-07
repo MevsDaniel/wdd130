@@ -8,7 +8,6 @@ a .nav_link {
 }
 #content{
     max-width: 1600px;
-    text-align: center;
     margin:0 auto;
     
 }
@@ -52,7 +51,7 @@ nav a {
     color:greenyellow
 }
 .msg p{
-    color:lightgrey
+    color:lightgrey;
 }
 .msg{
     background-color: blueviolet;
@@ -89,4 +88,7 @@ footer p {
 }
 main section{
     text-align: center;
+}
+.mountains{
+    text-align: left;
 }
