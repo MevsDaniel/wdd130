@@ -17,7 +17,11 @@ a .nav_link {
 
 }
 body {
-    background-color: #d48484; 
+    background-color: #d48484;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color:rgba(20,30,13, .7);
