@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap') ;
+
 body {
-    background-color: whitesmoke;    ;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+.home-title {
+    font-family: 'Rock Salt', 'Roboto   ', sans-serif;
+    font-size: 2em;
 }
 a .nav_link {
     padding: 30px;
@@ -35,9 +46,11 @@ nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
+    padding: 35px;
 } 
 .home-title{
-    color:forestgreen
+    color:forestgreen;
+    margin-top: 10px;
 }
 .book, .join {
     background-color: rgb(40, 92, 92);
@@ -46,24 +59,35 @@ nav a {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: blueviolet;
     color:bisque
 }
 .msg h2 {
-    color:greenyellow
+    color:greenyellow ;
+    font-family: 'Rock Salt', 'Roboto   ', sans-serif;
 }
 .msg p{
     color:lightgrey;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .msg{
     background-color: blueviolet;
     color: blue;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer{
     background-color: rebeccapurple;
-    color:beige
+    color:beige;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     text-align: center;
@@ -78,8 +102,27 @@ footer p {
     font-size: 1.2em;
     text-align: left;
 }
+footer .social img {
+    padding-top: 15px;
+}
 .icon,.logo {
     width: 80px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+.icon {
+    padding-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #d9c2a3;
+
+}
+main section img {
+    box-sizing: border-box;
 }
 #hero-img{
     width: 100%
