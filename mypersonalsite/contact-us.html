@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">s
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/baby-bytes-logo.png" alt="Bbaby bytes logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipies</a>
+                <a href="site-plan.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+    <main class="contact">
+        <div class="left-container">
+            <div id="feedback"></div>
+            <h1>Submit Feedback</h1>
+            <form action="/my-handling-form-page" 
+            method="post">
+                <ul>
+                  <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" required id="mail" name="user_email" placeholder="youremail@here.com" />
+                  </li>
+                  <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                </ul>
+              </form>
+        </div>
+        <div class="right-container">
+            <h1>Contact Us Directly</h1>
+            <p>About Me</p>
+            <p>Email:Danielthemaniel@pickles.com</p>
+            <p>Phone number: (123)456-7890</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11515.291960977189!2d-111.7887751!3d43.8180309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b074a301367%3A0x327e3e76c11d4c55!2sCasa%20De%20Ochoa!5e0!3m2!1sen!2sus!4v1712272468303!5m2!1sen!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        
+    </main>    
+
+    <footer>
+        <p>Dry Oar &copy; 2024 - Daniel Mevs</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+<div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+
+</html>
