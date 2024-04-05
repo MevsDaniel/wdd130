@@ -179,6 +179,18 @@ h2 {
     text-align: center;
   } */
 /* Recipes */
+.img-container{
+    text-align: center;
+    background-color: aqua;
+}
+.recipe-name{
+    text-align: center;
+}
+.list-container, .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
   /* contact us stuff */
   form {
