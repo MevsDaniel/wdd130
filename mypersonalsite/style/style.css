@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap') ;
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap');
+body{
+    background-color: #EDF6F9;
+}
 .nav_link {
     padding: 30px;
     font-size: 1.3em;
@@ -10,7 +12,7 @@
     margin:0 auto;
 }
 header {
-    background-color:rgba(20,30,13, .7);
+    background-color:#E29578;
     text-align: left;
     display: grid;
     grid-template-columns: 150px auto;
@@ -28,8 +30,8 @@ header {
     margin:0 auto;
 }
 nav a:hover {
-    background-color: black;
-    color:rgb(141, 25, 25)
+    background-color: white;
+    color:#02A9EA
 }
 nav a {
     text-align: center;
@@ -42,7 +44,7 @@ nav {
     justify-content: space-around;
 }
 footer{
-    background-color: #43281c;
+    background-color: #E29578;
     color:beige;
     padding: 25px 50px;
     margin-top: 200px;
@@ -56,7 +58,7 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color:crimson;
+    color:#02A9EA;
     text-decoration: none;
 }
 footer p {
@@ -75,7 +77,6 @@ body {
     gap: 40px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: #fff;
     color: #444;
     margin-top: 25px;
     grid-gap: 1em 1em;
@@ -98,42 +99,76 @@ body {
     justify-self: end;
 }
 .latest-recipe{
-    font-family: Roboto;
+    font-family: Oswald;
     grid-row: 1/2;
     grid-column: 1/2;
     padding: 5px;
-    background-color:rgba(62, 107, 57, 0.368);
-    width: 20%;
-    height: 20%;
-    text-align: center;
-    position: relative;
+    background-color:rgba(242, 246, 241, 0.368);
+    width: 30%;
+    height: 40%;
     text-align: center;
     color: white;
+    text-shadow: 4px 4px #000, 2px -2px #000, -2px -2px #000, -2px 2px #000, 2px 2px #000;
+    letter-spacing: .1em;
+    border: 10px solid #43281c;
+    font-size: 20px;
 }
 .textbox {
     position: absolute;
-    bottom: -250px;
-    right: 40px;
-    background-color: black;
-    color: white;
+    bottom: -290px;
+    right: -40px;
+    color: White;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: .1em;
+    text-shadow: 4px 4px #000, 2px -2px #000, -2px -2px #000, -2px 2px #000, 2px 2px #000;
+    
 }
 .text-block {
+    font-family: Oswald;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    bottom: 150px;
+    right: 600px;
+    color: Black;
+    line-height: 1.4;
+    width: 100%;
+
   }
+.textbox2{
+    bottom: 235px;
+    right: -1325px;    
+    text-align: center;
+    width: 10%;
+    position: relative;
+    color: white;
+    letter-spacing: .1em;
+    text-shadow: 4px 4px #000, 2px -2px #000, -2px -2px #000, -2px 2px #000, 2px 2px #000;
+    font-size: 30px;
+
+  }
+  .textbox3{
+    text-align: center;
+    bottom: -53px;
+    right: -1327px;
+    width: 10%;
+    position: relative;
+    text-align: center;
+    color: white;
+    letter-spacing: .1em;
+    text-shadow: 4px 4px #000, 2px -2px #000, -2px -2px #000, -2px 2px #000, 2px 2px #000;
+    font-size: 30px;
+
+  }
+
+
 /* second home grid */
 
 .second-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-row-gap: 10px
+    grid-row-gap: 30px;
 }
 .kideating {
     width: 100%;
@@ -184,6 +219,14 @@ h2 {
     height: auto;
     position: relative;
     width: 50%;
+    border: 10px solid #d9c2a3;
+}
+.second-title{
+    background-color: #43281c;
+    color:white;
+    text-align: center;
+    grid-column: 1/11;
+    margin: 10px;
 }
 /* image overlay */
 .overlay {
@@ -210,16 +253,27 @@ h2 {
   } 
 /* Recipes */
 .img-container{
+    margin: 10px;
     text-align: center;
-    background-color: aqua;
+    position:sticky;
+    background-color: #E0A458;
+}
+.banana-pancakes-recipe{
+    margin: 5px;
 }
 .recipe-name{
     text-align: center;
 }
-.list-container, .contact{
+.list-container{
     display: flex;
     align-items: center;
     justify-content: center;
+        margin: 0 auto;
+        width: 600px;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+
 }
 
   /* contact us stuff */
@@ -231,6 +285,12 @@ h2 {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
   }
   
   ul {
@@ -320,3 +380,4 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 1em;
   }
+  
