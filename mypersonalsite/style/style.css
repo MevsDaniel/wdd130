@@ -47,7 +47,7 @@ footer{
     background-color: #E29578;
     color:beige;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -115,8 +115,8 @@ body {
 }
 .textbox {
     position: absolute;
-    bottom: -290px;
-    right: -40px;
+    bottom: 350px;
+    right: 485px;
     color: White;
     padding-left: 20px;
     padding-right: 20px;
@@ -138,10 +138,10 @@ body {
   }
 .textbox2{
     bottom: 235px;
-    right: -1325px;    
+    right: 440px;    
     text-align: center;
     width: 10%;
-    position: relative;
+    position: absolute;
     color: white;
     letter-spacing: .1em;
     text-shadow: 4px 4px #000, 2px -2px #000, -2px -2px #000, -2px 2px #000, 2px 2px #000;
@@ -150,8 +150,8 @@ body {
   }
   .textbox3{
     text-align: center;
-    bottom: -53px;
-    right: -1327px;
+    bottom: 780px;
+    right: -145px;
     width: 10%;
     position: relative;
     text-align: center;
@@ -253,7 +253,7 @@ h2 {
   } 
 /* Recipes */
 .img-container{
-    margin: 10px;
+    padding: 30px;
     text-align: center;
     position:sticky;
     background-color: #8E3B46;
@@ -263,6 +263,8 @@ justify-content: center
     margin: 5px;
 }
 .recipe-name{
+    margin: 100px;
+    padding: 10px;
     text-align: center;
     background-color: #E0A458;
 }
@@ -270,11 +272,11 @@ justify-content: center
     display: flex;
     align-items: center;
     justify-content: center;
-        margin: 0 auto;
-        width: 600px;
-        padding: 1em;
-        border: 1px solid #ccc;
-        border-radius: 1em;
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: 35px solid #8E3B46;
+    border-radius: 1em;
 
 }
 .recipes-container{
@@ -374,16 +376,22 @@ justify-content: center
 .contact h1{
     text-align: center;
     margin: 10px;
+    
 }
 .contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr; 
+
 }
 .right-container{
-    padding: 1em;
+    padding: 10px 50px;
     border: 1px solid #ccc;
     border-radius: 1em;
+    background-color: #8E3B46;
+  }
+  .left-container{
+    background-color: #FF8200;
+    margin: 200px 0px 200px 0px;
   }
   @media screen and (min-width: 700px){
   .text-block2{    
