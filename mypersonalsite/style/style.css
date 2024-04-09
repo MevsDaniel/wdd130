@@ -256,13 +256,15 @@ h2 {
     margin: 10px;
     text-align: center;
     position:sticky;
-    background-color: #E0A458;
+    background-color: #8E3B46;
+justify-content: center
 }
 .banana-pancakes-recipe{
     margin: 5px;
 }
 .recipe-name{
     text-align: center;
+    background-color: #E0A458;
 }
 .list-container{
     display: flex;
@@ -274,6 +276,9 @@ h2 {
         border: 1px solid #ccc;
         border-radius: 1em;
 
+}
+.recipes-container{
+    background-color: #E0A458;
 }
 
   /* contact us stuff */
