@@ -385,4 +385,10 @@ justify-content: center
     border: 1px solid #ccc;
     border-radius: 1em;
   }
-  
+  @media screen and (min-width: 700px){
+  .text-block2{    
+    bottom: 150px;
+    right: 600px;
+
+  }
+  }
